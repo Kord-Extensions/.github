@@ -1,0 +1,99 @@
+# https://github.com/probot/settings
+
+repository:
+    allow_mege_commit: true
+    allow_rebase_merge: false  # Usually not required, and risky enough that it should be done manually
+    allow_squash_merge: true
+    default_branch: master
+    has_downloads: false  # Most projects don't need to produce release builds
+    has_issues: true
+    has_projects: true
+    has_wiki: false  # We have our own documentation elsewhere
+    homepage: https://kotlindiscord.com
+    topics: kotlin
+
+labels:
+    - name: "Duplicate"
+      color: EB862D
+      description: Duplicate of another task.
+
+    - name: "Good First Issue"
+      color: 2DEB4C
+      description: Task is considered suitable for newcomers.
+
+    - name: "Invalid"
+      color: EB862D
+      description: Task is considered invalid or out of scope.
+
+    - name: "Won't Fix"
+      color: EB862D
+      description: Reported issue is working as intended.
+
+    - name: "Priority: High"
+      color: 982DEB
+      description: Task is considered higher-priority.
+
+    - name: "Priority: Low"
+      color: 982DEB
+      description: Task is considered lower-priority.
+
+    - name: "Status: Awaiting Review"
+      color: EBCB2D
+      description: Ready for review.
+  
+    - name: "Status: Blocked"
+      color: EBCB2D
+      description: Waiting on something else to be ready.
+  
+    - name: "Status: Stale"
+      color: EBCB2D
+      description: Has had no activity for some time.
+  
+    - name: "Status: WIP"
+      color: EBCB2D
+      description: Currently being worked on.
+
+    - name: "Type: Bug"
+      color: 312DEB
+      description: Something isn't working correctly.
+
+    - name: "Type: Enhancement"
+      color: 312DEB
+      description: Improvements to existing features.
+
+    - name: "Type: Feature"
+      color: 312DEB
+      description: Suggestions and tracking for new features.
+
+    - name: "Type: Question"
+      color: 312DEB
+      description: Request for clarification or more information.
+
+teams:
+    - name: admins
+      permission: admin
+
+    - name: developers
+      permission: push
+
+branches:
+    - name: master
+
+      protection:
+        required_pull_request_reviews:
+            dismiss_stale_reviews: true
+            require_code_owner_reviews: false
+            required_approving_review_count: 1
+
+            dismissal_restrictions:
+                teams:
+                    - admins
+                    - developers
+        
+        required_status_checks:
+            strict: true
+        
+        restrictions:
+            teams:
+                - admins
+                - developers
