@@ -1,3 +1,12 @@
+---
+name: Bug Report
+about: Report a bug or other problem
+title: ''
+labels: 'Type: Bug'
+assignees: ''
+
+---
+
 <!--
 Hello, and thanks for submitting a bug report! To help us address this issue
 quickly, please take the time to fill out this issue template to the best of

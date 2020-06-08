@@ -1,3 +1,12 @@
+---
+name: Question
+about: Ask a more general question
+title: ''
+labels: 'Type: Question'
+assignees: ''
+
+---
+
 <!--
 Hello, and thanks for submitting a question! To help us address this issue
 quickly, please take the time to fill out this issue template to the best of
