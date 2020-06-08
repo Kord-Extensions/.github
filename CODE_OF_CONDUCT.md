@@ -9,4 +9,4 @@ in our repositories. Instead, please
 
 All Code of Conduct violations will be approached with the gravity that the specific
 situation demands. We are serious about our responsibility to provide a friendly and
-inclusive space for our users, and all violaters will be dealt with appropriately.
+inclusive space for our users, and all violations will be dealt with appropriately.
