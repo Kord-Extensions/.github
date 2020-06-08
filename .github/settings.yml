@@ -25,10 +25,6 @@ labels:
       color: EB862D
       description: Task is considered invalid or out of scope.
 
-    - name: "Won't Fix"
-      color: EB862D
-      description: Reported issue is working as intended.
-
     - name: "Priority: High"
       color: 982DEB
       description: Task is considered higher-priority.
@@ -68,6 +64,10 @@ labels:
     - name: "Type: Question"
       color: 312DEB
       description: Request for clarification or more information.
+
+    - name: "Won't Fix"
+      color: EB862D
+      description: Reported issue is working as intended.
 
 teams:
     - name: admins
