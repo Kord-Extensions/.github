@@ -1,47 +1,28 @@
 firstPRWelcomeComment: >
-  Hello, and thanks for opening a pull request! As this is your first pull request to this repository
-  we'd just like to offer you a warm welcome to the project, and the following pointers:
+  Hello, and thanks for opening a pull request! As this is your first pull request to this repository we'd just like to offer you a warm welcome to the project, and the following pointers:
 
-  * Most importantly, all contributions must adhere to our
-    [Code of Conduct](https://kotlindiscord.com/docs/code-of-conduct) and contributor guidelines.
-    Please give them a quick read if you haven't already.
+  * Most importantly, all contributions must adhere to our [Code of Conduct](https://kotlindiscord.com/docs/code-of-conduct) and contributor guidelines. Please give them a quick read if you haven't already.
 
-  * While our team is passionate about the projects we've created here, we're all volunteers. Please
-    don't be offended if it takes time for us to get to your pull request - we'll be here as soon
-    as we can be!
+  * While our team is passionate about the projects we've created here, we're all volunteers. Please don't be offended if it takes time for us to get to your pull request - we'll be here as soon as we can be!
 
-  * If your pull request is a work-in-progress, then please mark it as a draft
-    (if you haven't already done so). This helps us to prioritise our review process.
+  * If your pull request is a work-in-progress, then please mark it as a draft (if you haven't already done so). This helps us to prioritise our review process.
 
-  * Our review process may feel a little daunting to a newcomer. Don't worry, everyone starts somewhere!
-    In order to make things easier, please ensure that you're linting your code. You can find more
-    information on how to do this in the README for this project.
+  * Our review process may feel a little daunting to a newcomer. Don't worry, everyone starts somewhere! In order to make things easier, please ensure that you're linting your code. You can find more information on how to do this in the README for this project.
 
-  Thanks again for your work so far! If you have any questions, please feel free to join us on
-  Discord in the `#dev-kotdis` channel or to contact a staff member directly.
+  Thanks again for your work so far! If you have any questions, please feel free to join us on Discord in the `#dev-kotdis` channel or to contact a staff member directly.
 
 firstPRMergeComment: >
-  Congratulations, you've just scored your first merged pull request to this repository! Thanks
-  for your contribution - your changes are currently being built and will be deployed automatically.
+  Congratulations, you've just scored your first merged pull request to this repository! Thanks for your contribution - your changes are currently being built and will be deployed automatically.
 
-  Kotlin Discord UG exists to support its users, and it's people like you that help to shape our path
-  as we move forward. We couldn't do what we do without your support!
+  Kotlin Discord UG exists to support its users, and it's people like you that help to shape our path as we move forward. We couldn't do what we do without your support!
 
 firstIssueWelcomeComment: >
-  Hello, and thanks for opening an issue! As this is the first time you've created an issue on this
-  repository, we'd just like to offer you a warm welcome to the project, and the following pointers:
+  Hello, and thanks for opening an issue! As this is the first time you've created an issue on this repository, we'd just like to offer you a warm welcome to the project, and the following pointers:
 
-  * Most importantly, all issues must adhere to our
-    [Code of Conduct](https://kotlindiscord.com/docs/code-of-conduct). Please give it a quick read if
-    you haven't already.
+  * Most importantly, all issues must adhere to our [Code of Conduct](https://kotlindiscord.com/docs/code-of-conduct). Please give it a quick read if you haven't already.
   
-  * While our team is passionate about the projects we've created here, we're all volunteers. Please
-    don't be offended if it takes time for us to get to your issue - we'll be here as soonas we can be!
+  * While our team is passionate about the projects we've created here, we're all volunteers. Please don't be offended if it takes time for us to get to your issue - we'll be here as soonas we can be!
   
-  * Please provide as much information as possible when asking a question, reporting a problem, or
-    submitting a feature request. This will help us to address your issue quickly and efficiently.
-    If you forgot to add some information, no worries - feel free to edit the issue and add anything
-    you missed!
+  * Please provide as much information as possible when asking a question, reporting a problem, or submitting a feature request. This will help us to address your issue quickly and efficiently. If you forgot to add some information, no worries - feel free to edit the issue and add anything you missed!
   
-    Thanks for contacting us! If you have any further questions, please feel free to join us on
-    Discord in the `#dev-kotdis` channel or to contact a staff member directly.
+    Thanks for contacting us! If you have any further questions, please feel free to join us on Discord in the `#dev-kotdis` channel or to contact a staff member directly.
