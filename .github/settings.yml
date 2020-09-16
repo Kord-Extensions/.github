@@ -4,7 +4,7 @@ repository:
     allow_mege_commit: true
     allow_rebase_merge: false  # Usually not required, and risky enough that it should be done manually
     allow_squash_merge: true
-    default_branch: master
+    default_branch: root
     has_downloads: false  # Most projects don't need to produce release builds
     has_issues: true
     has_projects: true
