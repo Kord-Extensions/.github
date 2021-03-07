@@ -3,3 +3,4 @@ todo:  # https://github.com/JasonEtco/todo
     blobLines: 7            # Number of lines to include in the issue body
     label: false            # Don't add a label to issues opened this way
     reopenClosed: true      # Reopen closed issues if a TODO is re-added
+    exclude: 'detekt\.yml'  # Ignore detekt configs, which have that word in them
