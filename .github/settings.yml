@@ -13,6 +13,14 @@ repository:
     topics: kotlin
 
 labels:
+    - name: "hacktoberfest-accepted"
+      color: F74400
+      description: Pull Request accepted for Hacktoberfest
+      
+    - name: "invalid"
+      color: 000000
+      description: Spam or invalid Pull Request
+      
     - name: "Duplicate"
       color: EB862D
       description: Duplicate of another task.
