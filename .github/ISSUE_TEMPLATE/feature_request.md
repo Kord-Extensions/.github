@@ -42,7 +42,7 @@ to leave them in this section. Any research you've done can also go here.
 # Media
 
 <details>
-    <summary>Click to expans</summary>
+    <summary>Click to expand</summary>
 
     If you have any screenshots, videos, or other relevant media, please insert it here - at
     the bottom of the issue. We also prefer that you place all media within this `details`
