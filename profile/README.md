@@ -16,7 +16,7 @@ is a primary source of inspiration for our fairly object-oriented design, especi
 
 The Kord ecosystem has become rich with frameworks of many types, including an official framework named `kordx.commands`. We believe that 
 Kord Extensions speaks for itself - so we've created a 
-[feature comparison matrix](https://kordex.kotlindiscord.com/framework-comparison) that includes all of the major Kord-based frameworks.
+[feature comparison matrix]([https://kordex.kotlindiscord.com/framework-comparison](https://docs.google.com/spreadsheets/d/e/2PACX-1vQtsks-QAnwoR0VmWgjTzq5T2QD66wNpEsWE_g5aZ6Z-nM6cJ3MpjIVF0m79j8of8huh4bIuxOIqz2-/pubhtml)) that includes all of the major Kord-based frameworks.
 
 Not every framework is right for every bot - be sure to make an informed choice before you get started!
 
