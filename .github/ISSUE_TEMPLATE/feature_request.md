@@ -17,7 +17,7 @@ of the following sections are optional - remove any that don't apply.
 
 Additionally, please remember that GitHub issues are not the place to disclose
 a security issue. Instead, please contact a member of our admin team directly
-on Discord, or send a private message to the ModMail bot there.
+on Discord, or use GitHub's built in security disclosure procedure.
 -->
 
 # Summary
@@ -33,6 +33,9 @@ This helps us to pinpoint the specific surface area of your feature requests.
 
 Please detail exactly what you would like to get out of this feature request. Be
 specific, and try to give detailed examples of the behaviour you're looking for.
+
+Additionally, you should provide specific information on what your use-case is, 
+if possible.
 
 # Suggestions
 

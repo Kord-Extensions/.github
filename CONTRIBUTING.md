@@ -1,13 +1,13 @@
 # Contributor Guidelines
 
-Kotlin Discord UG maintains a variety of projects, both intended for use by its community and
+Kord Extensions maintains a variety of projects, both intended for use by its community and
 by the world at large. We believe that well-maintained code is key when it comes to running
 a project properly - for that reason, please follow these points when contributing to our
 repositories:
 
 * **Follow our Code of Conduct:** All contributions must follow our Code of Conduct. If
   you haven't read it yet, we would ask that you 
-  [go ahead and do that now](https://kotlindiscord.com/docs/code-of-conduct).
+  [go ahead and do that now](https://github.com/Kord-Extensions/.github/blob/master/CODE_OF_CONDUCT.md).
 
 * **Don't fight the framework:** If a project is making use of a specific framework or
   toolset, then you are expected to make use of it. If you feel like there's a better
@@ -46,8 +46,8 @@ repositories:
   it is possible to work on both, it can be a heavier workload - especially if the
   blocking PR requires a lot of changes.
 
-* **Avoid trivial contributions:** We will not accept PRs that address extremely small
-  issues, such as a single-line comment or documentation edit, spelling corrections, and
-  so on. Instead, please open an issue or contact a staff member directly.
+* **Avoid trivial contributions:** We will be unlikely to accept PRs that address extremely 
+  small issues, such as a single-line comment or documentation edit, spelling corrections, 
+  and so on. Instead, please open an issue or contact a staff member directly.
 
   We will accept PRs that address a large number of trivial changes, however.

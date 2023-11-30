@@ -9,7 +9,7 @@ repository:
     has_issues: true
     has_projects: true
     has_wiki: false  # We have our own documentation elsewhere
-    homepage: https://kotlindiscord.com
+    homepage: https://kordex.dev
     topics: kotlin
 
 labels:
@@ -85,7 +85,7 @@ teams:
       permission: push
 
 branches:
-    - name: master
+    - name: root
 
       protection:
         required_pull_request_reviews:

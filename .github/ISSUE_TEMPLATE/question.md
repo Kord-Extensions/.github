@@ -16,7 +16,7 @@ When you're done, feel free to remove these comments if you like.
 
 Additionally, please remember that GitHub issues are not the place to disclose
 a security issue. Instead, please contact a member of our admin team directly
-on Discord, or send a private message to the ModMail bot there.
+on Discord, or use GitHub's built in security disclosure procedure.
 -->
 
 This issue template is freeform, as questions can be about any relevant subject. 
@@ -35,5 +35,5 @@ Instead of providing you with headers, we'd like to offer the following tips:
   to it!
 
 * All issues are required to follow our 
-  [Code of Conduct](https://kotlindiscord.com/docs/code-of-conduct). If you
-  haven't yet read it, we recommend that you do so now.
+  [Code of Conduct](https://github.com/Kord-Extensions/.github/blob/master/CODE_OF_CONDUCT.md). 
+  If you haven't yet read it, we recommend that you do so now.

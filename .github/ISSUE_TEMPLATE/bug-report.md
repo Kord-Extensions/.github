@@ -18,7 +18,7 @@ any that don't apply.
 
 Additionally, please remember that GitHub issues are not the place to disclose
 a security issue. Instead, please contact a member of our admin team directly
-on Discord, or send a private message to the ModMail bot there.
+on Discord, or use GitHub's built in security disclosure procedure.
 -->
 
 # Description
@@ -65,7 +65,7 @@ Any research you've done can also go here.
 # Media
 
 <details>
-    <summary>Click to expans</summary>
+    <summary>Click to expand</summary>
 
     If you have any screenshots, videos, or other relevant media, please insert it here - at
     the bottom of the issue. We also prefer that you place all media within this `details`
