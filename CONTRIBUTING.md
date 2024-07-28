@@ -51,3 +51,278 @@ repositories:
   and so on. Instead, please open an issue or contact a staff member directly.
 
   We will accept PRs that address a large number of trivial changes, however.
+
+# Code Style
+
+As some contributors appear to be confused about the canonical code style used by Kord Extensions,
+this attempts to clarify a few things.
+
+## Whitespace
+
+Kord Extensions uses **four-space-width tabs** for indentation for most file types. This means that users and
+contributors may configure their editors to display indents in whatever way works best for them, and it may
+also make it easier for visually-impaired users and contributors to browse the source code.
+
+YAML (`.yml`) files use **two spaces** instead, as YAML files may not be tab-indented and are often deeply nested.
+
+## Blank Lines
+
+Some style conventions
+(such as [the one used by kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines/blob/master/CONTRIBUTING.md))
+disallow blank lines in function bodies.
+At Kord Extensions, the goal is not to write golfed code - instead, code should be separated into logically defined
+blocks, split with singular blank lines.
+
+In general, this means grouping similar types of statements together, and separating them with blank lines.
+
+### Data vs Logic
+
+**Split variable definitions and functional expressions where possible and when logic allows.** For example:
+
+```kt
+// This is incorrect.
+
+val hello = "hello"
+val world = "world"
+println("$hello, $world!")
+val question = "What's up?"
+println(question)
+
+// Do this instead.
+
+val hello = "hello"
+val world = "world"
+val question = "What's up?"
+
+println("$hello, $world!")
+println(question)
+```
+
+### Function vs Property/Variable
+
+**Split function calls and property/variable access where possible and when logic allows.** For example:
+
+```kt
+// This is incorrect.
+
+val x: SomeObj
+x.doThing()
+x.variable = 42
+val something: x.getThing()
+x.doOtherThing(something)
+x.takeMap(
+  mapOf("a" to "b"), 
+  "c"
+)
+
+// Do this instead.
+
+val x: SomeObj
+val something: x.getThing()
+
+x.doThing()
+x.doOtherThing(something)
+
+x.variable = 42
+
+x.takeMap(
+  mapOf("a" to "b"), 
+
+  "c"
+)
+```
+
+### Lines vs Blocks
+
+**Split single-line expressions and blocks, and split separate blocks.** For example:
+
+```kt
+// This is incorrect.
+
+val x: Something
+x.doSomething {
+  // ...
+}
+x.doThing()
+x.doSomethingElse{
+  // ...
+}
+
+// Do this instead.
+
+val x: Something
+
+x.doSomething {
+  // ...
+}
+
+x.doThing()
+
+x.doSomethingElse{
+  // ...
+}
+```
+
+### Long Wrapped Statements
+
+**When dealing with statements wrapped within symbol characters (such as parentheses), don't let them get too long.**
+Additionally, add commas to the end of lists, and follow the other rules. For example:
+
+```kt
+// This is incorrect.
+
+private fun addGeneratedFiles(target: Project, extension: KordExExtension, kordVersion: Version?, kordExVersion: Version) {
+  // ...
+
+  doSomething(1, 2, "a", "b", listOf(null), true, null, false)
+}
+
+// Do this instead.
+
+private fun addGeneratedFiles(
+  target: Project,
+  extension: KordExExtension,
+  kordVersion: Version?,
+  kordExVersion: Version,
+) {
+  // ...
+
+  doSomething(
+    1, 2, 
+    "a", "b",
+
+    listOf(null), 
+
+    true, false,
+  )
+}
+```
+
+### Grouped Calls
+
+**When using the same function/property multiple times, split them from other function/property uses.**
+For example:
+
+```kt
+// This is incorrect.
+
+val properties = Properties()
+properties.setProperty("settings.dataCollection", extension.dataCollection.readable)
+properties.setProperty("modules", extension.modules.joinToString())
+properties.setProperty("versions.kordEx", kordExVersion.version)
+properties.setProperty("versions.kord", kordVersion?.version)
+properties.store(outputFile.get().asFile.writer(), null)
+
+// Do this instead.
+
+val properties = Properties()
+
+properties.setProperty("settings.dataCollection", extension.dataCollection.readable)
+properties.setProperty("modules", extension.modules.joinToString())
+properties.setProperty("versions.kordEx", kordExVersion.version)
+properties.setProperty("versions.kord", kordVersion?.version)
+
+properties.store(outputFile.get().asFile.writer(), null)
+```
+
+### Chained Access/Complex Arguments
+
+**When chaining multiple function/property uses in one statement, split them onto separate lines.**
+Also, if you're chaining a lot of functions in the same statement, split them into groupings as explained earlier. 
+This also applies when you're passing complex arguments to functions.
+
+For example:
+
+```kt
+// This is incorrect.
+
+val sourceSet = target.extensions.getByType(SourceSetContainer::class.java).first { it.name == "main" }
+sourceSet.output.dir(mapOf("builtBy" to task), outputDir)
+
+// Do this instead.
+
+val sourceSet = target
+  .extensions
+  .getByType(SourceSetContainer::class.java)
+  .first { it.name == "main" }
+
+sourceSet.output.dir(
+  mapOf("builtBy" to task),
+
+  outputDir
+)
+```
+
+---
+
+## Example
+
+### Incorrect
+
+```kt
+
+private fun addGeneratedFiles(target: Project, extension: KordExExtension, kordVersion: Version?, kordExVersion: Version) {
+  val outputDir = target.layout.buildDirectory.dir("generated")
+  val outputFile = target.layout.buildDirectory.file("generated/kordex.properties")
+  val task = target.tasks.create("generateMetadata") {
+    group = "generation"
+    description = "Generate KordEx metadata."
+    outputs.file(outputFile)
+    doLast {
+      val properties = Properties()
+      properties.setProperty("settings.dataCollection", extension.dataCollection.readable)
+      properties.setProperty("modules", extension.modules.joinToString())
+      properties.setProperty("versions.kordEx", kordExVersion.version)
+      properties.setProperty("versions.kord", kordVersion?.version)
+      properties.store(outputFile.get().asFile.writer(), null)
+    }
+  }
+
+  val sourceSet = target.extensions.getByType(SourceSetContainer::class.java).first { it.name == "main" }
+
+  sourceSet.output.dir(mapOf("builtBy" to task), outputDir)
+}
+```
+
+### Correct
+
+```kt
+private fun addGeneratedFiles(
+  target: Project,
+  extension: KordExExtension,
+  kordVersion: Version?,
+  kordExVersion: Version
+) {
+  val outputDir = target.layout.buildDirectory.dir("generated")
+  val outputFile = target.layout.buildDirectory.file("generated/kordex.properties")
+
+  val task = target.tasks.create("generateMetadata") {
+    group = "generation"
+    description = "Generate KordEx metadata."
+
+    outputs.file(outputFile)
+
+    doLast {
+      val properties = Properties()
+
+      properties.setProperty("settings.dataCollection", extension.dataCollection.readable)
+      properties.setProperty("modules", extension.modules.joinToString())
+      properties.setProperty("versions.kordEx", kordExVersion.version)
+      properties.setProperty("versions.kord", kordVersion?.version)
+
+      properties.store(outputFile.get().asFile.writer(), null)
+    }
+  }
+
+  val sourceSet = target
+    .extensions
+    .getByType(SourceSetContainer::class.java)
+    .first { it.name == "main" }
+
+  sourceSet.output.dir(
+    mapOf("builtBy" to task),
+
+    outputDir
+  )
+}
+```

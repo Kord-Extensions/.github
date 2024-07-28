@@ -6,7 +6,7 @@
 [![Weblate project translated](https://img.shields.io/weblate/progress/kord-extensions?style=for-the-badge)]((https://hosted.weblate.org/engage/kord-extensions/)) <br />
 ![Latest](https://img.shields.io/maven-metadata/v?label=Latest&metadataUrl=https%3A%2F%2Fs01.oss.sonatype.org%2Fservice%2Flocal%2Frepositories%2Fsnapshots%2Fcontent%2Fcom%2Fkotlindiscord%2Fkord%2Fextensions%2Fkord-extensions%2Fmaven-metadata.xml&style=for-the-badge)
 
-[![Translation status](https://hosted.weblate.org/widgets/kord-extensions/-/main/287x66-grey.png)](https://hosted.weblate.org/engage/kord-extensions/)
+[![Translation status](https://hosted.weblate.org/widget/kord-extensions/core/287x66-grey.png)](https://hosted.weblate.org/engage/kord-extensions/)
 
 Kord Extensions is an addon for the excellent [Kord library](https://github.com/kordlib/kord). It intends to provide a
 framework for larger bot projects, with easy-to-use commands, rich argument parsing and event handling, wrapped up
@@ -26,7 +26,7 @@ Thanks to those that have donated to [support the project via Ko-Fi](https://ko-
 If you'd like to be listed for your donation here, please mention Kord Extensions and provide your GitHub username in
 your donation message.
 
-- @ToxicMushroom
+- [@ToxicMushroom](https://github.com/ToxicMushroom)
 
 # Contributors
 
