@@ -1,0 +1,31 @@
+body:
+- type: markdown
+  attributes:
+    value: |
+      This input is freeform, as questions can be about any relevant subject. 
+      Instead of providing you with headers, we'd like to offer the following tips:
+
+      * Be as detailed as possible in your question - detailed questions can often
+        be answered more quickly, as we need to ask for fewer clarifications.
+
+      * If you have any additional media that goes with your questions (for example,
+        screenshots, screen recordings, and so on), please attach them at the bottom
+        of your issue.
+
+      * Remember that there are only so many hours in the day - we'll get to you as
+        soon as we can, but there may be more pressing discussions that need to be
+        had before we can address your question. Don't worry, though - we will get
+        to it!
+
+      * All issues are required to follow our 
+        [Code of Conduct](https://github.com/Kord-Extensions/.github/blob/master/CODE_OF_CONDUCT.md). 
+        If you haven't yet read it, we recommend that you do so now.
+
+- type: textarea
+
+  attributes:
+    label: Question
+    description: Ask your question here.
+
+  validations:
+    required: true
