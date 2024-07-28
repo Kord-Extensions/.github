@@ -1,0 +1,50 @@
+- type: dropdown
+  attributes:
+    label: Components
+    description: List which parts of Kord Extensions this suggestion applies to.
+    multiple: true
+
+    options:
+    - Docs
+    - Gradle Plugins
+    - Infrastructure
+    - Kord Extensions (Core)
+    - Module
+    - Template Project
+    - Translations
+    - Websites
+    - Other
+
+    default: 3
+  validations:
+    required: true
+
+- type: textarea
+
+  attributes:
+    label: Summary
+    desription: A short summary describing your suggestion.
+
+  validations:
+    required: true
+
+- type: textarea
+
+  attributes:
+    label: Current Behaviour
+    description: If this suggestion is about changing an existing feature or function, explain how it currently behaves.
+
+- type: textarea
+
+  attributes:
+    label: Target Behaviour
+    description: Explain exactly what you'd like to get from this suggestion, providing specific details where possible.
+
+  validations:
+    required: true
+
+- type: textarea
+
+  attributes:
+    label: Implementation Tips
+    description: If you have any ideas on how this suggestion might be implemented, or you've done any research, please include it here.

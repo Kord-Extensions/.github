@@ -1,0 +1,7 @@
+contact_links:
+  - name: Suggestions and Ideas
+    url: https://github.com/orgs/Kord-Extensions/discussions/categories/suggestions
+    about: Please use GitHub Discussions to submit suggestions and ideas.
+  - name: General Questions
+    url: https://github.com/orgs/Kord-Extensions/discussions/categories/q-a
+    about: Please use GitHub Discussions to ask questions or receive user support.
