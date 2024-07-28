@@ -25,7 +25,7 @@ body:
 
   attributes:
     label: Summary
-    desription: A short summary describing your suggestion.
+    description: A short summary describing your suggestion.
 
   validations:
     required: true
