@@ -1,9 +1,9 @@
 ---
-name: Bug Report
-about: Report a bug or other problem
-title: ''
+name: 'Bug Report'
+about: 'Report a problem, bug, or other unexpected behaviour.'
+title: 'Bug: '
 type: 'bug'
-assignees: ''
+assignees: 'gdude2002'
 
 ---
 
@@ -36,7 +36,7 @@ If it makes sense for your report, please provide information on the following:
 
 * Names and versions of any implicated dependencies
 * Editor name and version
-* Gradle version
+* Gradle version and KordEx Gradle plugin version, if using
 * JDK distribution, version and architecture
 * Kotlin distribution and plugin version
 
